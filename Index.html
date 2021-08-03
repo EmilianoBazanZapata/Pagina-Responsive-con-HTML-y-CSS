@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@100;400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Uneversity Web Design - Easy Tutorials</title>
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="HideMenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -23,7 +25,26 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <i class="fas fa-bars" onclick="ShowMenu()"></i>
         </nav>
+        <div class="text-box">
+            <h1>World's Biggest Uneversity</h1>
+            <p>
+               Making website is now one of easiest thing in the world. You just need to lear HTML, CSS,<br> Javascript and you are good to go. 
+            </p>
+            <a href="#" class="hero-btn">Visit Us To know More</a>
+        </div>
     </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function ShowMenu()
+        {
+            navLinks.style.right ="0";
+        }
+        function HideMenu()
+        {
+            navLinks.style.right ="-200px";
+        }
+    </script>
 </body>
 </html>
