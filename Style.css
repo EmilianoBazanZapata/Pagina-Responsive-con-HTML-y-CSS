@@ -2,6 +2,7 @@
 {
     margin: 0;
     padding: 0;
+    font-family: 'Georama', sans-serif;
 }
 /*inicio del header*/
 .header
@@ -41,6 +42,20 @@ nav img
 {
     color :#fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 26px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
 }
 /*fin del nav*/
