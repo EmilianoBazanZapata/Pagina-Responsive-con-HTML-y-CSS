@@ -105,6 +105,43 @@ nav .fas
     display: none;
 }
 /*fin inicio iconos del menu*/
+/*inicio de la seccion del curso*/
+.course
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+p
+{
+    color:#000;
+    font-size: 14;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col
+{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+/*fin de la seccion del curso*/
 /*tamaños de pantalla*/
 @media(max-width:700px)
 {
@@ -118,7 +155,7 @@ nav .fas
     }
     .nav-links
     {
-        position: absolute;
+        position: fixed;
         background: #f44336;
         height: 100vh;
         width: 200px;
