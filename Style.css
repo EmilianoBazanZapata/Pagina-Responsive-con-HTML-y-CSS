@@ -295,6 +295,32 @@ h3
     padding: 0;
 }
 /*fin cita*/
+/*inicio footer*/
+.footer
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer
+{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+.icons .fab
+{
+    color: #f44336;
+    margin: 0 13px;
+    cursor:pointer;
+    padding: 18px 0;
+}
+.far
+{
+    color: #f44336;
+}
+/*fin footer*/
 /*tamaños de pantalla*/
 @media (max-width:700px)
 {
