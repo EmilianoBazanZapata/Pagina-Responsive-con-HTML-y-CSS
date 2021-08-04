@@ -248,7 +248,7 @@ h3
 {
     flex-basis: 44%;
     border-radius: 10px;
-    margin-left:45px;
+    margin-left:0;
     text-align: left;
     background: #fff3f3;
     padding: 40px;
@@ -276,7 +276,33 @@ h3
     color: #f44336;
 }
 /*fin de los testimonios*/
+/*inicio cita*/
+.cta
+{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1
+{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+/*fin cita*/
 /*tamaños de pantalla*/
+@media (max-width:700px)
+{
+    .cta h1
+    {
+        font-size: 24px;
+    }
+}
 @media (max-width:700px)
 {
     .testimonial-col 
